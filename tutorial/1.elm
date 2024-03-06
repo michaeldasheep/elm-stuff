@@ -20,8 +20,8 @@ update msg model =
 
 view model =
   div []
-    [ button [ onClick Decrement ] [ text "-" ]
-    , div [] [ text (String.fromInt model) ]
+    [ div [] [ text (String.fromInt model) ] 
+    , button [ onClick Decrement ] [ text "-" ]
     , button [ onClick Increment ] [ text "+" ]
     , button [ onClick Increment100 ] [ text "+100"]
     , button [ onClick Decrement100 ] [ text "-100"]
